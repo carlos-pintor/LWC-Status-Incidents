@@ -2,60 +2,19 @@
     <lightning-card icon-name="utility:info_alt" title="Status Incidents">
         <div class="slds-p-around_small">
             <lightning-layout multiple-rows="true">
-                <!--<lightning-layout-item padding="around-small">
-                    <lightning-button 
-                        variant="neutral"
-                        label="AP0" 
-                        title="AP0"
-                        icon-name="utility:warning"
-                        icon-position="right"></lightning-button>
+                <lightning-layout-item padding="around-small">
+                    <c-instance_status_pill instance-name="AP0" instance-status="Warning"></c-instance_status_pill>
                 </lightning-layout-item>
                 <lightning-layout-item padding="around-small">
-                    <lightning-button 
-                        variant="destructive"
-                        label="AP3" 
-                        title="AP3"
-                        icon-name="utility:clear"
-                        icon-position="right"></lightning-button>
-                </lightning-layout-item>-->
-                <lightning-layout-item padding="around-small">
-                    <span class="slds-pill slds-pill_link slds-theme_warning">
-                        <span class="slds-pill__icon_container">
-                            <span class="slds-icon_container" title="Warning">
-                                <lightning-icon variant="inverse" icon-name="utility:warning" alternative-text="Warning" title="Warning"></lightning-icon>
-                            <span class="slds-assistive-text">Warning</span>
-                            </span>
-                        </span>
-                        <a href="https://status.salesforce.com/" target="_blank" class="slds-pill__action slds-theme_warning" title="AP0">
-                            <span class="slds-pill__label">AP0</span>
-                        </a>
-                        <!--<button class="slds-button slds-button_icon slds-button_icon slds-pill__remove" title="Remove">
-                        <svg class="slds-button__icon" aria-hidden="true">
-                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
-                        </svg>
-                        <span class="slds-assistive-text">Remove</span>
-                        </button>-->
-                    </span>
+                    <c-instance_status_pill instance-name="IND1" instance-status="Warning"></c-instance_status_pill>
                 </lightning-layout-item>
                 <lightning-layout-item padding="around-small">
-                    <span class="slds-pill slds-pill_link slds-theme_error">
-                        <span class="slds-pill__icon_container">
-                            <span class="slds-icon_container" title="Error">
-                                <lightning-icon variant="inverse" icon-name="utility:clear" alternative-text="Error" title="Error"></lightning-icon>
-                            <span class="slds-assistive-text">Error</span>
-                            </span>
-                        </span>
-                        <a href="https://status.salesforce.com/" target="_blank" class="slds-pill__action slds-theme_error" title="AP3">
-                            <span class="slds-pill__label">AP3</span>
-                        </a>
-                        <!--<button class="slds-button slds-button_icon slds-button_icon slds-pill__remove" title="Remove">
-                        <svg class="slds-button__icon" aria-hidden="true">
-                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
-                        </svg>
-                        <span class="slds-assistive-text">Remove</span>
-                        </button>-->
-                    </span>
+                    <c-instance_status_pill instance-name="NADB100" instance-status="Warning"></c-instance_status_pill>
                 </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <c-instance_status_pill instance-name="CS115" instance-status="Error"></c-instance_status_pill>
+                </lightning-layout-item>
+                
             </lightning-layout>
         </div>
     </lightning-card>
