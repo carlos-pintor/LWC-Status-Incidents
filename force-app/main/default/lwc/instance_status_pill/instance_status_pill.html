@@ -1,0 +1,13 @@
+<template>
+    <span class={pillCSSClasses}>
+        <span class="slds-pill__icon_container">
+            <span class="slds-icon_container" title={instanceStatus}>
+                <lightning-icon variant="inverse" icon-name={pillIconName} alternative-text={instanceStatus} title={instanceStatus}></lightning-icon>
+            <span class="slds-assistive-text">{instanceStatus}</span>
+            </span>
+        </span>
+        <a href={instanceStatusURL} target="_blank" class={linkCSSClasses} title={instanceName}>
+            <span class="slds-pill__label">{instanceName}</span>
+        </a>
+    </span>
+</template>
