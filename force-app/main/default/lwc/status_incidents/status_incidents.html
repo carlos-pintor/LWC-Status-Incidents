@@ -16,21 +16,22 @@
                     </lightning-layout-item>
                 </lightning-layout>
             </lightning-record-view-form>
-            <lightning-layout multiple-rows="true">
-                <lightning-layout-item padding="around-small">
-                    <c-instance_status_pill instance-name="AP0" instance-status="Warning"></c-instance_status_pill>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <c-instance_status_pill instance-name="IND1" instance-status="Warning"></c-instance_status_pill>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <c-instance_status_pill instance-name="NADB100" instance-status="Warning"></c-instance_status_pill>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <c-instance_status_pill instance-name="CS115" instance-status="Error"></c-instance_status_pill>
-                </lightning-layout-item>
-                
-            </lightning-layout>
+            <div class="slds-box">
+                <lightning-layout multiple-rows="true">
+                    <lightning-layout-item padding="around-small">
+                        <c-instance_status_pill instance-name="AP0" instance-status="Warning"></c-instance_status_pill>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <c-instance_status_pill instance-name="IND1" instance-status="Warning"></c-instance_status_pill>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <c-instance_status_pill instance-name="NADB100" instance-status="Warning"></c-instance_status_pill>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <c-instance_status_pill instance-name="CS115" instance-status="Error"></c-instance_status_pill>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
         </div>
     </lightning-card>
 </template>
