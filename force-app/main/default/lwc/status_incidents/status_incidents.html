@@ -17,7 +17,9 @@
                 </lightning-layout>
             </lightning-record-view-form>
             <div class="slds-box">
-                <lightning-layout multiple-rows="true">
+                <div class="slds-text-title_bold">Impacted Instances:</div>
+                
+                <!--<lightning-layout multiple-rows="true">
                     <lightning-layout-item padding="around-small">
                         <c-instance_status_pill instance-name="AP0" instance-status="Warning"></c-instance_status_pill>
                     </lightning-layout-item>
@@ -30,7 +32,25 @@
                     <lightning-layout-item padding="around-small">
                         <c-instance_status_pill instance-name="CS115" instance-status="Error"></c-instance_status_pill>
                     </lightning-layout-item>
-                </lightning-layout>
+                </lightning-layout>-->
+                <!--************************************************************************-->
+                <!--<div class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light" role="status">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="utility:info" size="small" alternative-text="Info" title="Info"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                      <p>There is no instance information in the Account</p>
+                    </div>
+                </div>-->
+                <!--************************************************************************-->
+                <div class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light" role="status">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="utility:success" size="small" alternative-text="Info" title="Info"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                      <p>There are not incidents for the Instance</p>
+                    </div>
+                </div>
             </div>
         </div>
     </lightning-card>
