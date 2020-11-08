@@ -7,4 +7,9 @@
         <target>lightning__AppPage</target>
         <target>lightning__HomePage</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+            <property name="daysBack" type="Integer" default="0" min="0" label="Days back to get incidents from" required="true"/>
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>
