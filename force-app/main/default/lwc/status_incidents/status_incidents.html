@@ -43,14 +43,10 @@
                     </div>
                 </div>-->
                 <!--************************************************************************-->
-                <div class="slds-scoped-notification slds-media slds-media_center slds-scoped-notification_light" role="status">
-                    <div class="slds-media__figure">
-                        <lightning-icon icon-name="utility:success" size="small" alternative-text="Info" title="Info"></lightning-icon>
-                    </div>
-                    <div class="slds-media__body">
-                      <p>There are not incidents for the Instance</p>
-                    </div>
-                </div>
+                <c-scoped_notification theme-css="slds-scoped-notification_light">
+                    <lightning-icon slot="icon" icon-name="utility:info" size="small"  alternative-text="Info" title="Info"></lightning-icon>
+                    <p slot="body">There are not incidents for the Instance</p>
+                </c-scoped_notification>
             </div>
         </div>
     </lightning-card>
